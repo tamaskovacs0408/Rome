@@ -2,5 +2,13 @@
 
 <body>
   <%- include('partials/nav') %>
-  <h1><%= subpage %> </h1>
+  <main class="container">
+    <section class="d-flex flex-column justify-content-center align-items-center mt-2">
+      <h1 class="display-1 w-700 main_title"><%= title %> </h1>
+      <img class="page_image" src="<%= image %> " alt="title">
+      <article>
+        <p class="description_text"><%= description %> </p>
+      </article>
+    </section>
+  </main>
 </body>
