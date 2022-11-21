@@ -17,29 +17,12 @@ app.get('/', (req, res) => {
   res.render('home');
 })
 
-app.get("/colosseum", (req, res) => {
-  res.render("colosseum");
+app.get("/:subpage", (req, res) => {
+  const {subpage} = req.params;
+  const title = subpage[0].toUpperCase() + subpage.slice(1);
+  res.render("subpage", {title, subpage});
 });
 
-app.get("/forum", (req, res) => {
-  res.render("forum");
-});
-
-app.get("/pantheon", (req, res) => {
-  res.render("pantheon");
-});
-
-app.get("/trevi", (req, res) => {
-  res.render("trevi");
-});
-
-app.get("/castle", (req, res) => {
-  res.render("castle");
-});
-
-app.get("/vatican", (req, res) => {
-  res.render("vatican");
-});
 
 app.listen(port, () => {
   console.log(`Server runs at port ${port}.`)
