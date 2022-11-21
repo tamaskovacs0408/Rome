@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
+
+
+body {
+  background: rgb(211, 195, 179);
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "Quattrocento", serif;
+}
+
+.main_title {
+  color: rgb(84, 11, 14);
+  font-weight: 700;
+}
