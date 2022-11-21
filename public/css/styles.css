@@ -42,8 +42,6 @@ blockquote {
 
 .description_text {
     text-align: center;
-    /* background-image: url('../images/main_bg.jpg');
-    background-size: cover; */
     font-family: 'Caveat', cursive;
     font-size: 25px;
     text-shadow: .5px .5px 1px black;
@@ -66,6 +64,9 @@ blockquote {
   filter: sepia(0);
 }
 
+.page_image {
+  width: 100%;
+}
 
 @media screen and (min-width: 768px){
   blockquote {
@@ -78,5 +79,7 @@ blockquote {
 }
 
 @media screen and (min-width: 992px) {
-
+  .page_image {
+    width: 60%;
+}
 }
