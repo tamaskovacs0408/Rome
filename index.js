@@ -3,6 +3,7 @@ const dotenv = require('dotenv').config();
 const helmet = require('helmet');
 const cors = require('cors');
 const path = require('path');
+const romeData = require('./data.json');
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -19,8 +20,9 @@ app.get('/', (req, res) => {
 
 app.get("/:subpage", (req, res) => {
   const {subpage} = req.params;
-  const title = subpage[0].toUpperCase() + subpage.slice(1);
-  res.render("subpage", {title, subpage});
+  const pageTitle = subpage[0].toUpperCase() + subpage.slice(1);
+  const data = romeData[subpage];
+  res.render("subpage", {pageTitle, ...data});
 });
 
 
