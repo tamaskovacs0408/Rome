@@ -18,8 +18,9 @@ body {
   color: white;
   font-family: "Quattrocento", serif;
 }
-.navbar-toggler {
-  color: white !important;
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 h1 {
@@ -55,9 +56,6 @@ blockquote {
   justify-content: center;
 }
 
-.page_links {
-  width: 300px;
-}
 
 .page_links img {
   transition: filter ease-in 0.3s;
@@ -77,13 +75,8 @@ blockquote {
     text-align: justify;
     font-size: 30px;
   }
-  .page_link_container {
-    grid-template-columns: auto auto;
-  }
 }
 
 @media screen and (min-width: 992px) {
-  .page_link_container {
-    grid-template-columns: auto auto auto;
-  }
+
 }
