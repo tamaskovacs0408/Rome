@@ -14,3 +14,29 @@ h1 {
   color: rgb(84, 11, 14);
   font-weight: 700;
 }
+
+.page_link_container {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.page_links {
+  width: 300px;
+}
+
+.page_links img {
+  transition: filter ease-in 0.3s;
+  filter: grayscale(70%);
+}
+
+.page_links img:hover {
+  filter: grayscale(0);
+}
+
+
+@media screen and (min-width: 992px) {
+  .page_link_container {
+    grid-template-columns: auto auto auto;
+  }
+}
