@@ -81,5 +81,8 @@ blockquote {
 @media screen and (min-width: 992px) {
   .page_image {
     width: 60%;
-}
+  }
+  .description_text {
+    width: 75%;
+  }
 }
