@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 
 body {
   background: #f7f4f3;
@@ -34,12 +34,12 @@ header {
 }
 
 h1 {
-  font-family: "Quattrocento", serif;
+  font-family: 'Merriweather', serif;
   text-transform: uppercase;
+  color: rgb(84, 11, 14);
 }
 
 .main_title {
-  color: rgb(84, 11, 14);
   font-weight: 700;
   font-size: 60px;
   letter-spacing: 5px;
@@ -51,9 +51,8 @@ h1 {
 }
 
 blockquote {
-  font-family: "Quattrocento", serif;
+  font-family: 'Merriweather', serif;
   font-size: 14px;
-  font-weight: 600;
 }
 
 /* MAIN */
@@ -65,9 +64,7 @@ blockquote {
 
 .description_text {
   text-align: center;
-  font-family: "Caveat", cursive;
   font-size: 25px;
-  text-shadow: 0.5px 0.5px 1px black;
   font-weight: 500;
 }
 
@@ -91,6 +88,9 @@ blockquote {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    height: 600px;
+  }
   .main_title {
     font-size: 70px;
   }
