@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 body {
   background: #f7f4f3;
@@ -19,6 +18,10 @@ body {
   font-family: "Quattrocento", serif;
 }
 
+.navbar-brand:visited {
+  color: white;
+}
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -28,13 +31,13 @@ body {
 header {
   width: 100%;
   height: 500px;
-  background-image: url('/images/header_bg.png');
+  background-image: url("/images/header_bg.png");
   background-position: center;
   background-size: cover;
 }
 
 h1 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   text-transform: uppercase;
   color: rgb(84, 11, 14);
 }
@@ -51,22 +54,37 @@ h1 {
 }
 
 blockquote {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 14px;
 }
 
 /* MAIN */
 
 .homepage_content_container {
-  background-color: rgb(26,26,26);
+  background-color: rgb(26, 26, 26);
   color: #f7f4f3;
 }
 
 .description_text {
-  text-align: center;
-  font-size: 25px;
+  text-align: justify;
+  font-size: 20px;
   font-weight: 500;
 }
+
+span a {
+  color: rgb(172, 25, 30);
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+span a:hover {
+  color: rgb(84, 11, 14);
+}
+
+span a:visited {
+  color: rgb(84, 11, 14);
+}
+/* HOME PAGE LINKS */
 
 .page_link_container {
   display: grid;
@@ -87,6 +105,40 @@ blockquote {
   width: 100%;
 }
 
+/* FOOTER */
+
+footer {
+  font-size: 8px;
+}
+
+.main-footer {
+  background-color: rgb(26, 26, 26);
+  color: #f7f4f3;
+  /* font-size: 8px; */
+}
+
+.main-footer a,
+a:hover,
+a:visited {
+  color: #f7f4f3;
+  text-decoration: none;
+}
+
+.main-footer a:hover {
+  color: #f7f4f3;
+  text-decoration: none;
+}
+.main-footer a:visited {
+  color: #f7f4f3;
+  text-decoration: none;
+}
+
+.sub-footer a,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
 @media screen and (min-width: 768px) {
   header {
     height: 600px;
@@ -100,6 +152,9 @@ blockquote {
   .description_text {
     text-align: justify;
     font-size: 30px;
+  }
+  footer {
+    font-size: 10px;
   }
 }
 
@@ -116,5 +171,8 @@ blockquote {
   }
   .description_text {
     width: 75%;
+  }
+  footer {
+    font-size: 12px;
   }
 }
