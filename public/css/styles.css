@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
 body {
-  background: #F7F4F3;
+  background: #f7f4f3;
   font-size: 18px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
+/* NAVBAR */
 
 .navbar {
   background-color: rgb(84, 11, 14);
@@ -23,15 +23,31 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url('/images/header_bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
 h1 {
   font-family: "Quattrocento", serif;
   text-transform: uppercase;
 }
 
-
 .main_title {
   color: rgb(84, 11, 14);
   font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+.animate__animated.animate__fadeIn {
+  animation-duration: 3s;
+  animation-delay: 0.5s;
 }
 
 blockquote {
@@ -40,12 +56,17 @@ blockquote {
   font-weight: 600;
 }
 
+.homepage_content_container {
+  background-color: rgb(26,26,26);
+  color: #f7f4f3;
+}
+
 .description_text {
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 25px;
-    text-shadow: .5px .5px 1px black;
-    font-weight: 500;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  text-shadow: 0.5px 0.5px 1px black;
+  font-weight: 500;
 }
 
 .page_link_container {
@@ -53,7 +74,6 @@ blockquote {
   grid-template-columns: auto;
   justify-content: center;
 }
-
 
 .page_links img {
   transition: filter ease-in 0.3s;
@@ -68,7 +88,10 @@ blockquote {
   width: 100%;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+  .main_title {
+    font-size: 70px;
+  }
   blockquote {
     font-size: 25px;
   }
@@ -79,6 +102,13 @@ blockquote {
 }
 
 @media screen and (min-width: 992px) {
+  header {
+    height: 1000px;
+    background-position: bottom;
+  }
+  .main_title {
+    font-size: 80px;
+  }
   .page_image {
     width: 60%;
   }
