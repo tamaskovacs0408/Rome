@@ -2,12 +2,14 @@
 
 <body>
   <%- include('partials/nav') %>
-  <main class="container-fluid">
+  <header>
     <section
-      class="d-flex flex-column justify-content-center align-items-center mt-2"
+      class="d-flex flex-column justify-content-center align-items-center mt-5"
     >
-      <h1 class="display-1 w-700 main_title">Rome</h1>
-      <blockquote class="block text-center fst-italic m-2">
+      <h1 class="main_title animate__animated animate__fadeIn">
+        Rome
+      </h1>
+      <blockquote class="block text-center fst-italic">
         "Such life of yore the ancient Sabines led,<br />
         Such Remus and his brother: Etruria thus,<br />
         Doubt not, to greatness grew, and Rome became <br />
@@ -17,13 +19,14 @@
         >Vergilius: Georgics II. 532-535.</span
       >
     </section>
+  </header>
+  <main class="container-fluid homepage_content_container">
     <section
-      class="d-flex flex-column justify-content-center align-items-center mt-4 ms-auto me-auto mb-3 w-100"
+      class="d-flex flex-column justify-content-center align-items-center ms-auto me-auto mb-3 w-100"
     >
       <p class="description_text p-3">
         Rome, the capital of Italy is one of the most beautiful city in Europe
-        and the center of the ancient Roman Empire. 
-        It's located on the
+        and the center of the ancient Roman Empire. It's located on the
         central-western part of the Italian-Peninsula, along the shores of
         Tiber. You can find a piece of history from the last 2000 years in
         almost every corner of the city. Let's visit together some of Rome's
@@ -32,39 +35,48 @@
     </section>
     <section class="container-fluid">
       <div class="row d-flex justify-content-center">
-          <a class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 pe-auto page_links" href="/colosseum"
-            ><img
-              class="w-100 shadow-sm"
-              src="/images/colosseum.jpg"
-              alt="Colosseum"
-          /></a>
-          <a class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links" href="/forum"
-            ><img
-              class="w-100 shadow-sm"
-              src="/images/forum.jpg"
-              alt="Forum romanum"
-          /></a>
-          <a class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links" href="/pantheon"
-            ><img
-              class="w-100 shadow-sm"
-              src="/images/pantheon_day.jpg"
-              alt="Pantheon"
-          /></a>
-          <a class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links" href="/trevi"
-            ><img class="w-100 shadow-sm" src="/images/trevi.jpg" alt="Trevi"
-          /></a>
-          <a class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links" href="/castle"
-            ><img
-              class="w-100 shadow-sm"
-              src="/images/sanangelo.jpg"
-              alt="Castle"
-          /></a>
-          <a class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links" href="/vatican"
-            ><img
-              class="w-100 shadow-sm"
-              src="/images/vatican.jpg"
-              alt="Vatican"
-          /></a>
+        <a
+          class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 pe-auto page_links"
+          href="/colosseum"
+          ><img
+            class="w-100 shadow-sm"
+            src="/images/colosseum.jpg"
+            alt="Colosseum"
+        /></a>
+        <a
+          class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links"
+          href="/forum"
+          ><img
+            class="w-100 shadow-sm"
+            src="/images/forum.jpg"
+            alt="Forum romanum"
+        /></a>
+        <a
+          class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links"
+          href="/pantheon"
+          ><img
+            class="w-100 shadow-sm"
+            src="/images/pantheon_day.jpg"
+            alt="Pantheon"
+        /></a>
+        <a
+          class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links"
+          href="/trevi"
+          ><img class="w-100 shadow-sm" src="/images/trevi.jpg" alt="Trevi"
+        /></a>
+        <a
+          class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links"
+          href="/castle"
+          ><img
+            class="w-100 shadow-sm"
+            src="/images/sanangelo.jpg"
+            alt="Castle"
+        /></a>
+        <a
+          class="block col-12 col-sm-12 col-md-6 col-lg-4 m-3 page_links"
+          href="/vatican"
+          ><img class="w-100 shadow-sm" src="/images/vatican.jpg" alt="Vatican"
+        /></a>
       </div>
     </section>
   </main>
