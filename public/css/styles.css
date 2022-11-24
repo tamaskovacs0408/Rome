@@ -92,18 +92,71 @@ span a:visited {
   justify-content: center;
 }
 
-.page_links img {
-  transition: filter ease-in 0.3s;
-  filter: sepia(50%);
+.colosseum_link {
+  padding: 10%;
+  background-image: url("/images/colosseum.jpg");
+  background-size: cover;
 }
 
-.page_links img:hover {
-  filter: sepia(0);
+.forum_link {
+  padding: 10%;
+  background-image: url("/images/forum.jpg");
+  background-size: cover;
 }
 
-.page_image {
+.pantheon_link {
+  padding: 10%;
+  background-image: url("/images/pantheon.jpg");
+  background-size: cover;
+}
+
+.trevi_link {
+  padding: 10%;
+  background-image: url("/images/trevi.jpg");
+  background-size: cover;
+}
+
+.castle_link {
+  padding: 10%;
+  background-image: url("/images/sanangelo.jpg");
+  background-size: cover;
+}
+
+.vatican_link {
+  padding: 10%;
+  background-image: url("/images/vatican.jpg");
+  background-size: cover;
+}
+
+.page_links {
+  display: block;
   width: 100%;
+  text-decoration: none;
 }
+
+.page_links h2 {
+  display: block;
+  width: auto;
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  color: rgb(84, 11, 14);
+  visibility: hidden;
+  text-align: center;
+  transition: all ease-in 0.3s;
+}
+
+.link_container:hover h2 {
+  visibility: visible;
+  backdrop-filter: blur(10px);
+}
+
+.page_links:visited {
+  text-decoration: none;
+  color: rgb(84, 11, 14);
+}
+
+
+
 
 /* FOOTER */
 
