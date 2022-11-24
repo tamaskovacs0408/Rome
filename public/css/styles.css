@@ -102,7 +102,7 @@ span a:visited {
 }
 
 .pantheon_link {
-  background-image: url("/images/pantheon.jpg");
+  background-image: url("/images/pantheon_day.jpg");
 }
 
 .trevi_link {
@@ -114,7 +114,7 @@ span a:visited {
 }
 
 .vatican_link {
-  background-image: url("/images/vatican.jpg");
+  background-image: url("/images/vatican_day.jpg");
 }
 
 .page_links {
@@ -215,8 +215,8 @@ a:visited {
   .page_links {
     font-size: 30px;
   }
-  .page_image {
-    width: 60%;
+  .carousel {
+    width: 60% !important;
   }
   .description_text {
     width: 75%;
