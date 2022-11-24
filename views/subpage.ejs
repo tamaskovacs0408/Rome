@@ -3,11 +3,69 @@
 <body>
   <%- include('partials/nav') %>
   <main class="container">
-    <section class="container d-flex flex-column justify-content-center align-items-center mt-2">
-      <h1 class="display-1 text-center w-700"><%= title %> </h1>
-      <img class="page_image m-2" src="<%= image %> " alt="<%= title%>">
+    <section
+      class="container d-flex flex-column justify-content-center align-items-center mt-2"
+    >
+      <h1 class="display-1 text-center w-700"><%= title %></h1>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="<%= image %>" class="d-block w-100" alt="<%= title %>" />
+          </div>
+          <div class="carousel-item">
+            <img src="<%= image2 %>" class="d-block w-100" alt="<%= title %>" />
+          </div>
+          <div class="carousel-item">
+            <img src="<%= image3 %>" class="d-block w-100" alt="<%= title %>" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <article>
-        <p class="description_text m-auto"><%= description %></p>
+        <p class="description_text mt-2 me-auto ms-auto"><%= description %></p>
       </article>
     </section>
   </main>
