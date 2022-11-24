@@ -31,7 +31,7 @@ body {
 header {
   width: 100%;
   height: 500px;
-  background-image: url("/images/header_bg.png");
+  background-image: url("/images/rome-header-bg.png");
   background-position: center;
   background-size: cover;
 }
@@ -61,7 +61,7 @@ blockquote {
 /* MAIN */
 
 .homepage_content_container {
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(5,5,5);
   color: #f7f4f3;
 }
 
@@ -158,7 +158,7 @@ footer {
 }
 
 .main-footer {
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(5,5,5);
   color: #f7f4f3;
   /* font-size: 8px; */
 }
